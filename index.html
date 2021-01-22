@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Items</h1>
+
+<ul>
+{% for item in site.items %}
+    <li>
+        <a href="/items/{{item.slug}}">{{item.content}}</a>
+    </li>
+{% endfor %}
+</ul>

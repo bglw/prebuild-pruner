@@ -1,0 +1,6 @@
+title: Prebuild Pruner
+
+collections:
+  items:
+    name: Items
+    output: true
