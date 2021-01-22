@@ -4,9 +4,9 @@
     read
     while IFS=, read -r item hide || [ -n "$item" ];
     do
-        if [ "$hide" = 'true' ]; then
+        if [[ "$hide" = *'true'* ]]; then
+            echo "Deleting $item"
             rm "_items/$item.html"
-            echo "Deleted $item"
         fi
     done 
 } < _data/filter.csv
