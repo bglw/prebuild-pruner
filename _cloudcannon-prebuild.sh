@@ -5,7 +5,7 @@
     while IFS=, read -r item hide || [ -n "$item" ];
     do
         if [ "$hide" = 'true' ]; then
-            rm $item
+            rm "_items/$item.html"
             echo "Deleted $item"
         fi
     done 
