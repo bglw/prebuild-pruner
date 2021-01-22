@@ -8,7 +8,7 @@
             echo "Suppressing $item"
 
             # Crude addition of the published flag (assuming none exists)
-            sed -i '' -e '1 s/---/---\npublished: false/g' "_items/$item.html"
+            sed -i -e '1 s/---/---\npublished: false/g' "_items/$item.html"
 
             # Alternate: crude deletion
             #rm "_items/$item.html"
