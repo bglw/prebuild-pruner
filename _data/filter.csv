@@ -1,5 +1,4 @@
 item,hide
 a,false
-c,true
-_items/c.html,false
-,false
+b,true
+c,false
